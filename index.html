@@ -49,19 +49,24 @@
           }
       }
 
+      // From the option theme we get the images/path info
       function getOption() {
           pathImage = "images/" + document.forms[0].myOption.value + "/";
           loadImages(pathImage)
           //alert("Votre choix est: " + pathImage);
       }
 
+      // The action mode for the Slide show
       function onClickMode(param) {
           mode = param;
       }
+
+      // The selected speed demanded
       function onClickSpeed(param) {
           speed = param;
       }
 
+      // Process all Slide show action
       function startSlideshow() {
           if (mode === "play") {
               document.getElementById("play").disabled = "disabled";
